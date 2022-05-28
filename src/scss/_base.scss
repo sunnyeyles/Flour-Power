@@ -1,0 +1,23 @@
+//boiler plate, mixins and variables
+
+//boiler plate
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+//variables
+
+$main-green: #16512b;
+$highlight-yellow: yellow;
+
+//mixins
+
+//   @mixins cards-flex {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: flex-end;
+//   gap: 20px;
+//   border: 2px solid #16512b;
+// }
