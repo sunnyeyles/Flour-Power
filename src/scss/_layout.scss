@@ -1,19 +1,26 @@
 //layout with grid etc
 //write most code here
+//try to use rem & em instead of px
 
-//try to use rem instead of px
 @use "base" as b;
+//use b.variable or mixins when applying
 
+header {
+  color: b.$main-green;
+  text-align: center;
+  height: 100vh;
+}
 main {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  grid-auto-rows: 1fr;
+  @include b.main-grid;
+  margin: 5rem 0rem 5rem 0rem;
+  // would be good to do a max width that the cards span across but max-width gets rid of margin:auto;
+  // max-width: 1000px;
+
   div {
-    margin: 2rem;
-    border-radius: 10%;
     padding: 2rem;
-    width: 2rem;
-    height: 2rem;
-    background-color: b.$main-green;
+    width: 5rem;
+    height: 5rem;
+    background-color: b.$highlight-yellow;
+    margin: auto;
   }
 }
