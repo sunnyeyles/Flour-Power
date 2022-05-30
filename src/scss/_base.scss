@@ -19,17 +19,11 @@ $main-green: #16512b;
 $highlight-yellow: yellow;
 
 //sizes
-$tablet-width: 820px;
+$tablet-width: 766px;
 
 //---------mixins--------
 
 //main layout mixins
-@mixin main-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  grid-auto-rows: 1fr;
-  gap: 5rem 1rem;
-}
 
 @mixin cards-flex {
   display: flex;
