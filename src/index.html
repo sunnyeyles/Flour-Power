@@ -24,14 +24,23 @@
             </ul>
         </nav>
         <!-- top of page -->
-        <div><img src="./images/Backstein PM Logo-100x100.png" alt="Backstein PM Logo"><h1>Backstein</h1></div>
-        <p class="de">Backstein — Bäckerei für zeitgenössisches Brot <br>Öffnungszeiten: Di.— Fr. 9:00 — 19:00 Grassistraße 4, 04107 Leipzig</p>
-        <p class="en">Backstein — Bakery for contemporary bread  <br>Opening Hours: Di.— Fr. 9:00 — 19:00 Grassistraße 4, 04107 Leipzig</p>
+        <div>
+            <img src="./images/Backstein PM Logo-100x100.png" alt="Backstein PM Logo">
+            <h1>Backstein</h1>
+        </div>
+
+        <p class="de">Backstein — Bäckerei für zeitgenössisches Brot
+            <br> Öffnungszeiten: Di.— Fr. 9:00 — 19:00 Grassistraße 4, 04107 Leipzig</p>
+
+        <p class="en">Backstein — Bakery for contemporary bread
+            <br>Opening Hours: Di.— Fr. 9:00 — 19:00 Grassistraße 4, 04107 Leipzig</p>
         
 
         
     </header>
     <main>
+
+        <!-- introduction to Backstein PM. In desktop format the information is backed by an image of a single loaf of bread on a baking tray with the bread to the left of the tex. In tablet mode the tray rotates 90deg anti-clockwise so that the bread sits underneath the intro. In mobile mode the image is removed and the text is only backed by the semi-transparent yellow box -->
         <section id="about">
           
             <img src="./images/Backstein-full tray.jpg" alt="">
@@ -50,6 +59,7 @@
         </div>
         </section>
 
+        <!-- section to detail the availabilty of breads as it changes throughout the week. Visible only in desktop view, hidden for tablet and mobile users -->
         <section id="daily">
             <img src="./images/Haferkante-full tray.jpg" alt="">
             <div class="yellow-bcg">
@@ -128,11 +138,13 @@ FRI:
   
   
 
+<!-- Offering section details the breads available with brief introduction and includes ingredients, price and weight. In desktop thios information is shown with two breads per row, image to the left, text to the right (following the styling set in the opening two sections). In tablet view the breads are reduced to one bread per row, image left/text right and in mobile view this is reduced to a single scrolling column with the bread name, price and weight coming first, the image second and the text last -->
 
 <section id="offering">
+
+   <!--  sour dough bread -->
         <div class="card">1
-            
-        <img src="./images/Backstein.jpg" alt=""> 
+            <img src="./images/Backstein.jpg" alt=""> 
           <div class="card-text">
             <h2>BACKSTEIN</h2>
             <h3>1kg / 5,60€</h3> 
@@ -149,8 +161,8 @@ Wheat*,Water,Salt
 </div>
         </div>
   
-        <div class="card">2
-            
+        <!-- monte rosa bread -->
+        <div class="card">
             <img src="./images/Monte_Rosa.jpg" alt=""> 
           <div class="card-text">
             <h2>MONTE ROSA</h2>
@@ -169,8 +181,9 @@ Rye*,Water,Salt
             </p>
 </div>
         </div>
-        <div class="card">3 
-            
+
+        <!-- olivebread -->
+        <div class="card">
             <img src="./images/Olivenbatard-1.jpg" alt=""> 
           <div class="card-text">
           <h2>OLIVENBATARD</h2>
@@ -187,10 +200,14 @@ Wheat*,Water,Salt,Yeast,Barley Malt*, Kalamata Olives
             </p>
 </div>
         </div>
-        <div class="item-4">4 
+
+
+        <!-- deep purple bread -->
+        <div class="card">
+            <img src="./images/Deep_Purple.jpg" alt="">
+            <div class="card-text">
             <h2>DEEP PURPLE</h2>
-            <h3>750g / 6,50€</h3>
-            <img src="./images/Deep_Purple.jpg" alt=""> 
+            <h3>750g / 6,50€</h3> 
             <p class="de">
             Ein Weizenmischbrot mit gerösteten Walnüssen und Feigen. Die Krumenfarbe ist durch die Walnüsse leicht purpurfarben, die Feigen stehen für das ”deep“. Das 
 Weizen*,Roggen*,Wasser, Walnüsse*,Feigen,Salz,
@@ -201,12 +218,15 @@ Gerstenmalz*
 Wheat*,Rye*,Water, Walnuts*,Figs,Salt, 
 Barley malt*
             </p>
-
         </div>
-        <div class="item-5">5 
-            <h2>HAFERKANTE</h2>
+        </div>
+
+        <!-- haferbread -->
+        <div class="card">
+            <img src="./images/Haferkante.jpg" alt="">
+            <div class="card-text"> 
+                <h2>HAFERKANTE</h2>
             <h3>1kg / 6,50€</h3>
-            <img src="./images/Haferkante.jpg" alt=""> 
             <p class="de">
             Gleicher Teig wie das Sejerlänner, nur im Kasten gebacken und mit Haferflocken rundum benetzt.
 
@@ -221,10 +241,14 @@ Barley malt*
             </p>
 
         </div>
-        <div class="item-6">6 
+        </div>
+
+<!-- rye and oat bread -->
+        <div class="card"> 
+            <img src="./images/Sejerlaenner.jpg" alt="">
+            <div class="card-text">
             <h2>SEJERLÄNNER</h2>
-            <h3>1kg / 6,20€</h3>
-            <img src="./images/Sejerlaenner.jpg" alt=""> 
+            <h3>1kg / 6,20€</h3> 
             <p class="de">
             Ein Roggenmischbrot aus der Heimat des Bäckermeisters  Weit genug, um das Rezept leicht zu interpretieren. Mit ganzen verquollenen Roggen- und Haferkörnern. Für die malige Note sorgt ein Aromastück.
 
@@ -237,21 +261,25 @@ Gerstenmalz*
 Rye*,Wheat*,Water, Grains Of Rye,Oats, Grains,Salt, 
 Barley malt*
             </p>
-
         </div>
-        <!-- <div>7 <img src="./images/" alt=""> 
+        </div>
+
+        <!-- <div>
+            <img src="./images/" alt=""> 
             <p class="de">
             <h2>HUSKY</h2>
             </p>
             <p class="en">
             <h2>HUSKY</h2>
-            </p> -->
+            </p>
+        </div> -->
 
-        </div>
-        <div class="item-8">8 
+        <!-- Hamster bread -->
+        <div class="card">
+            <img src="./images/Hamsterbacke.jpg" alt="">
+            <div class="card-text">
             <h2>HAMSTERBACKE</h2>
-            <h3>1kg / 8,00€</h3>
-            <img src="./images/Hamsterbacke.jpg" alt=""> 
+            <h3>1kg / 8,00€</h3> 
             <p class="de">
             Auf Basis eines Weizenmischteiges mit ganzen verquollenen Roggen- und Haferkörnern, gerösteten Ölsaaten und einem Aromastück, das für eine milde Säure und leichte Malznote sorgt.
 
@@ -266,21 +294,27 @@ Wheat Flour*,Rye Flour*,Water,
 Rye Grains,Oat Grains,Pumpkin Seeds, Sunflower Seeds,Sesame Seeds*,Flax Seeds, 
 Salt,Barley Malt*
             </p>
-
         </div>
-        <!-- <div>9 <img src="./images/Walnuss.jpg" alt=""> 
+        </div>
+
+
+        <!-- <div>
+            <img src="./images/Walnuss.jpg" alt=""> 
             <p class="de">
             <h2>WALNUSS</h2>
             </p>
             <p class="en">
             <h2>WALNUSS</h2>
-            </p> -->
+            </p>
+        </div> -->
 
-        </div>
-        <div class="item-10">10
+
+        <!-- salve bread -->
+        <div class="card">
+            <img src="./images/Grand_Paysan.jpg" alt="">
+            <div class="card-text">
             <h2>SALVE</h2>
             <h3>1kg / 5,80€</h3>
-            <img src="./images/Grand_Paysan.jpg" alt=""> 
             <p class="de">
             Alte steingemahlene Weizensorten versäuert und mit Ruchmehl, kühl und langsam geführt. Als über 3kg Laib gebacken.
 
@@ -291,52 +325,65 @@ Weizen*,Roggen*,Wasser,Salz,
 
 Wheat*,Rye*,Water,Salt,
             </p>
-
         </div>
-        <div class="item-11">11 
+        </div>
+
+        <!-- croissants -->
+
+        <div class="card">
+            <img src="./images/Croissant.jpg" alt="">
+            <div class="card-text">
             <h2>CROISSANTS</h2>
-            <h3>2,50€</h3>
-            <img src="./images/Croissant.jpg" alt=""> 
+            <h3>2,50€</h3> 
             <p class="de">
             Weizen*, Wasser, Milch*, Butter, Ei*, Salz, Zucker, Gerstenmalz*, Hefe
             </p>
             <p class="en">
             Wheat*, Water, Milk, Butter, Egg, Salt, Sugar, Barley Malt*, Yeast 
             </p>
-
         </div>
-        <div class="item-12">12 
+        </div>
+
+        <!-- cinnamon buns -->
+        <div class="card">
+            <img src="./images/Zimtschnecken_360x360.jpg" alt="">
+            <div class="card-text">
             <h2>ZIMTSCHNECKEN</h2>
             <H3>3,50€</H3>
-            <img src="./images/Zimtschnecken_360x360.jpg" alt=""> 
             <p class="de">
             Weizen*, Wasser, Milch*, Butter, Ei*, Salz, Zimt, Zucker, Gerstenmalz*, Hefe
             </p>
             <p class="en">
             Wheat*, Water, Milk, Butter, Egg, Salt, Cinnamon, Sugar, Barley Malt*, Yeast 
             </p>
-
         </div>
-        <!-- <div>13 <img src="" alt=""> 
+        </div>
+        
+        
+        <!-- <div>
+            <img src="" alt=""> 
             <p class="de">
             <h2>FOCACCIA</h2>
             </p>
             <p class="en">
             <h2>FOCACCIA</h2>
-            </p> -->
+            </p>
+        </div> -->
 
-        </div>
-        <div class="item-14">14 
+        
+
+        <div class="card">
+            <img src="./images/PainAuChoc-360x360.jpg" alt="">
+            <div class="card-text">
             <h2>PAIN AU CHOCOLATE</h2>
             <h3>2,80€</h3>
-            <img src="./images/PainAuChoc-360x360.jpg" alt=""> 
             <p class="de">
             Weizen*, Wasser, Milch*, Zartbitterschokolade, Butter, Ei*, Salz, Zucker, Gerstenmalz*, Hefe
             </p>
             <p class="en">
             Wheat*, Water, Milk, Dark Chocolate, Butter, Egg, Salt, Sugar, Barley Malt*, Yeast 
             </p>
-
+        </div> 
         </div>
         <!-- <div>15 <img src="" alt=""> 
             <p class="de">
