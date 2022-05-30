@@ -11,6 +11,7 @@ header {
   text-align: center;
   height: 100vh;
   font-size: 2rem;
+  margin: auto;
 }
 header h1 {
   padding: 2rem;
@@ -18,22 +19,47 @@ header h1 {
 }
 
 main {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  grid-auto-rows: 1fr;
-  gap: 5rem 1rem;
   margin: 5rem 0rem 5rem 0rem;
-  max-width: 1080px;
+  max-width: 1700px;
   margin: 0 auto;
 }
-main div {
-  padding: 2rem;
-  width: 5rem;
-  height: 5rem;
-  background-color: yellow;
-  margin: auto;
+main .card {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+main .card img {
+  width: 100%;
+}
+main .card div.card-text {
+  display: inline-block;
+  border: solid 2px;
+  width: 100%;
+  padding: 1rem;
 }
 
+@media (min-width: 766px) {
+  header {
+    height: 60vh;
+  }
+
+  main .card {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 345px;
+    max-width: 100%;
+  }
+  main .card img {
+    width: 50%;
+    min-width: 345px;
+  }
+  main .card div.card-text {
+    display: inline-block;
+    border: solid 2px;
+    width: 50%;
+    padding: 1rem;
+  }
+}
 nav ul {
   display: flex;
   justify-content: space-around;
@@ -58,7 +84,7 @@ nav ul li i {
   font-size: 0.5rem;
 }
 
-@media (min-width: 820px) {
+@media (min-width: 766px) {
   nav {
     display: none;
   }
