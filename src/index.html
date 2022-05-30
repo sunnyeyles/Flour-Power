@@ -397,7 +397,9 @@ Wheat*,Rye*,Water,Salt,
     </section>
 
     <section class="order-form">
+        <img src="./images/Deep_Purple-full tray.jpg" alt="">
         <div class="yellow-bcg">
+            <div class="daily">
             <form action="order">
                 <input type="radio" id="col-del" name="collection-delivery" value="collection">
                    <label for="collection">Collection</label>
@@ -405,8 +407,8 @@ Wheat*,Rye*,Water,Salt,
                     <label for="delivery">Delivery</label>
                     <br>
                     <br>
-                    <input type="datetime" id="order-ready-date" name="order-ready-date" value="time-and-date">
-                    <label for="order-ready-date"> Date and Time for collection/delivery</label>
+                    <input type="date" id="order-ready-date" name="order-ready-date" value="time-and-date">
+                    <label for="order-ready-date"> Date for collection/delivery</label>
                     <br>
                     <br>
                     <p class="form-names">Backstein</p>
@@ -485,6 +487,8 @@ Wheat*,Rye*,Water,Salt,
                       </select>
                       <br>
                     <br>
+                </div>
+                <div class="single-days">
                     <p class="form-names">Tuesday Only:</p>
                     <p class="form-names">Sejerlänner</p>
                     <label for="bread">Select quantity:</label>
@@ -514,16 +518,8 @@ Wheat*,Rye*,Water,Salt,
                       </select>
                       <br>
                     <br>
-                    <p class="form-names">Backstein</p>
-                    <label for="bread">Select quantity:</label>
-                    <select id="bread" name="backstein">
-                        <option value="backstein-none">0</option>
-                        <option value="backstein-one">1</option>
-                        <option value="backstein-two">2</option>
-                        <option value="backstein-three">3</option>
-                      </select>
-                    <br>
-                    <br>
+                
+                
                     <p class="form-names">Friday Only:</p>
                     <p class="form-names">Hamsterbacke</p>
                     <label for="bread">Select quantity:</label>
@@ -545,6 +541,23 @@ Wheat*,Rye*,Water,Salt,
                       </select>
                       <br>
                     <br>
+                </div>
+                <p class="form-names">
+                    For larger orders please use the contatct box:
+                </p>
+                <label for="subject"></label>
+                <textarea id="subject" name="subject" placeholder="Additional information.." style="height:200px"></textarea>
+
+                <label for="fname">Full Name</label>
+                <input type="text" id="fname" name="fullname" placeholder="Johanes K. Schmidt">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="johanes@backstein.pm">
+                <label for="address">Address</label>
+                <input type="text" id="adr" name="address" placeholder="Grassisstraße 4">
+                <label for="zip">Postcode</label>
+                <input type="text" id="postcode" name="postcode" placeholder="04107">
+                <label for="city"> City</label>
+                <input type="text" id="city" name="city" placeholder="Leipzig">
 
 
 
