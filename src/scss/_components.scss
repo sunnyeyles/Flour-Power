@@ -10,6 +10,12 @@ nav {
     font-weight: 700;
     box-shadow: 0px 2px 10px #888;
     li {
+      a {
+        text-decoration:none;
+      }
+      a:visited {
+        color: unset;
+      }
       i {
         //shopping cart icon
         font-size: 0.5rem;
