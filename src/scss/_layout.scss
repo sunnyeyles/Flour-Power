@@ -15,7 +15,9 @@ header {
     padding: 2rem;
     text-shadow: 10px 10px 0px b.$highlight-yellow;
   }
-}
+} 
+
+
 main {
   @include b.main-grid;
   margin: 5rem 0rem 5rem 0rem;
