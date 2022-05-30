@@ -12,52 +12,105 @@ header {
   height: 100vh;
   font-size: 2rem;
   margin: auto;
+  padding: 2rem;
 }
 header h1 {
   padding: 2rem;
   text-shadow: 10px 10px 0px yellow;
 }
 
-main {
+main #daily {
+  display: none;
+}
+main #about {
+  display: none;
+}
+main #offering {
   margin: 5rem 0rem 5rem 0rem;
   max-width: 1700px;
-  margin: 0 auto;
 }
-main .card {
+main #offering .card {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  max-width: 345px;
+  margin: auto;
 }
-main .card img {
+main #offering .card img {
   width: 100%;
 }
-main .card div.card-text {
+main #offering .card div.card-text {
   display: inline-block;
   border: solid 2px;
   width: 100%;
   padding: 1rem;
 }
+main .order-form {
+  margin: auto;
+  max-width: 345px;
+}
+main .order-form img {
+  display: none;
+}
 
 @media (min-width: 766px) {
   header {
-    height: 60vh;
+    height: 55vh;
   }
 
-  main .card {
+  main #offering .card {
     display: flex;
     flex-wrap: wrap;
     min-width: 345px;
     max-width: 100%;
   }
-  main .card img {
+  main #offering .card img {
     width: 50%;
-    min-width: 345px;
   }
-  main .card div.card-text {
+  main #offering .card div.card-text {
     display: inline-block;
     border: solid 2px;
     width: 50%;
     padding: 1rem;
+  }
+  main .order-form {
+    width: 100%;
+    max-width: 1000px;
+  }
+}
+@media (min-width: 1000px) {
+  header {
+    height: 40vh;
+  }
+
+  main #daily {
+    display: block;
+  }
+  main #about {
+    display: block;
+  }
+  main #offering {
+    margin: auto;
+  }
+  main #offering .card {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 345px;
+    max-width: 100%;
+    margin: 2rem;
+  }
+  main #offering .card img {
+    width: 50%;
+  }
+  main #offering .card div.card-text {
+    display: inline-block;
+    border: solid 2px;
+    width: 50%;
+    padding: 1rem;
+  }
+  main .order-form {
+    width: 100%;
+    max-width: 768px;
   }
 }
 nav ul {
@@ -73,6 +126,9 @@ nav ul {
   background-color: white;
   font-weight: 700;
   box-shadow: 0px 2px 10px #888;
+}
+nav ul li {
+  font-size: 0.5rem;
 }
 nav ul li a {
   text-decoration: none;

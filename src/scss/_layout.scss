@@ -11,59 +11,128 @@ header {
   height: 100vh;
   font-size: 2rem;
   margin: auto;
+  padding: 2rem;
   h1 {
     padding: 2rem;
     text-shadow: 10px 10px 0px b.$highlight-yellow;
   }
 }
 
+
+
 //default mobile size
 main {
-  margin: 5rem 0rem 5rem 0rem;
-  max-width: 1700px;
-  margin: 0 auto;
 
-  .card {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-
-    img {
-      width: 100%;
+  #daily {
+      display: none;
     }
-
-    div.card-text {
-      display: inline-block;
-      border: solid 2px;
-      width: 100%;
-      padding: 1rem;
-    }
+  #about {
+          display: none;
   }
-}
-//tablet size
+  #offering{
+      margin: 5rem 0rem 5rem 0rem;
+      max-width: 1700px;
 
+      .card {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 345px;
+        margin: auto;
+
+        img {
+          width: 100%;
+        }
+
+        div.card-text {
+          display: inline-block;
+          border: solid 2px;
+          width: 100%;
+          padding: 1rem;
+        }
+      }
+    }
+    .order-form{
+      margin:auto;
+      max-width: 345px;
+      img{
+        display: none;
+      }
+    }
+}
+
+//tablet size
 @media (min-width: b.$tablet-width) {
   header {
-    height: 60vh;
+    height: 55vh;
   }
   main {
-    .card {
-      display: flex;
-      flex-wrap: wrap;
-      min-width: 345px;
-      max-width: 100%;
+    #offering{
+        .card {
+          display: flex;
+          flex-wrap: wrap;
+          min-width: 345px;
+          max-width: 100%;
 
-      img {
-        width: 50%;
-        min-width: 345px;
+          img {
+            width: 50%;
+          }
+
+          div.card-text {
+            display: inline-block;
+            border: solid 2px;
+            width: 50%;
+            padding: 1rem;
+          }
+        }
       }
+      .order-form{
+        width:100%;
+        max-width:1000px;
+      }
+  }
+}
 
-      div.card-text {
-        display: inline-block;
-        border: solid 2px;
-        width: 50%;
-        padding: 1rem;
+//desktop size
+@media (min-width: b.$desktop-width){
+  header {
+      height: 40vh;
+    }
+    main {
+      #daily {
+          display: block;
+        }
+      
+      #about {
+        display: block;
+      }
+      #offering {
+        margin:auto;
+        .card {
+          display: flex;
+          flex-wrap: wrap;
+          min-width: 345px;
+          max-width: 100%;
+          margin: 2rem;
+  
+          img {
+            width: 50%;
+          }
+  
+          div.card-text {
+            display: inline-block;
+            border: solid 2px;
+            width: 50%;
+            padding: 1rem;
+          }
+        }
+      }
+  
+      .order-form {
+        width: 100%;
+        max-width: 768px;
       }
     }
   }
-}
+
+
