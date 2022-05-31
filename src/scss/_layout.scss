@@ -4,57 +4,62 @@
 
 @use "base" as b;
 //use b.variable or mixins when applying
-
 header {
   color: b.$main-green;
   text-align: center;
-  height: 100vh;
+  height: 55vh;
   font-size: 2rem;
   margin: auto;
   padding: 2rem;
+  .de {
+    display: none;
+  }
   h1 {
     padding: 2rem;
     text-shadow: 10px 10px 0px b.$highlight-yellow;
   }
 }
 main {
-
+  .de {
+    display: none;
+  }
+  #about {
+    display: none;
+  }
   #daily {
+    display: none;
+  }
+  #offering {
+    margin: 5rem 0rem 5rem 0rem;
+    max-width: 1700px;
+
+    .card {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      max-width: 345px;
+      margin: auto;
+      padding: 1.5rem;
+
+      img {
+        width: 100%;
+      }
+
+      div.card-text {
+        display: inline-block;
+        border-bottom: solid 0.2px;
+        width: 100%;
+        padding: 1rem;
+      }
+    }
+  }
+  .order-form {
+    margin: auto;
+    max-width: 345px;
+    img {
       display: none;
     }
-  #about {
-          display: none;
   }
-  #offering{
-      margin: 5rem 0rem 5rem 0rem;
-      max-width: 1700px;
-
-      .card {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        max-width: 345px;
-        margin: auto;
-
-        img {
-          width: 100%;
-        }
-
-        div.card-text {
-          display: inline-block;
-          border: solid 2px;
-          width: 100%;
-          padding: 1rem;
-        }
-      }
-    }
-    .order-form{
-      margin:auto;
-      max-width: 345px;
-      img{
-        display: none;
-      }
-    }
 }
 
 //tablet size
@@ -63,72 +68,104 @@ main {
     height: 55vh;
   }
   main {
-    #offering{
-        .card {
-          display: flex;
-          flex-wrap: wrap;
-          min-width: 345px;
-          max-width: 100%;
+    //need to fix this
+    // #daily::before {
+    //   content: " ";
+    //   z-index: -1;
+    //   background: url("../images/Backstein-full\ tray.jpg");
+    //   background-size: cover;
+    //   transform: rotate(90deg);
+    //   height: 100vh;
+    // }
+    #about {
+      display: none;
+    }
+    #daily {
+      display: none;
+      width: 100%;
+      height: 100vh;
+      // background-image: url("../images/Backstein-full\ tray.jpg");
+      // background-rotate property??!!
+      p {
+        width: 50%;
+        margin: auto;
+      }
+    }
 
-          img {
-            width: 50%;
-          }
+    // cards
 
-          div.card-text {
-            display: inline-block;
-            border: solid 2px;
-            width: 50%;
-            padding: 1rem;
-          }
+    #offering {
+      .card {
+        display: flex;
+        flex-wrap: wrap;
+        min-width: 345px;
+        max-width: 100%;
+        img {
+          width: 50%;
+        }
+
+        div.card-text {
+          display: inline-block;
+          border: solid 2px;
+          width: 50%;
         }
       }
-      .order-form{
-        width:100%;
-        max-width:1000px;
-      }
+    }
   }
 }
 
 //desktop size
-@media (min-width: b.$desktop-width){
+@media (min-width: b.$desktop-width) {
   header {
-      height: 40vh;
+    height: 60vh;
+  }
+  main {
+    #about {
+      background-image: url("../images/Backstein-full\ tray.jpg");
+      @include b.daily-about;
+
+      .yellow-bcg {
+        display: inline-flex;
+        justify-content: flex-end;
+        p {
+          @include b.daily-about-text;
+        }
+      }
     }
-    main {
-      #daily {
-          display: block;
-        }
-      
-      #about {
-        display: block;
-      }
-      #offering {
-        margin:auto;
-        .card {
-          display: flex;
-          flex-wrap: wrap;
-          min-width: 345px;
-          max-width: 100%;
-          margin: 2rem;
-  
-          img {
-            width: 50%;
-          }
-  
-          div.card-text {
-            display: inline-block;
-            border: solid 2px;
-            width: 50%;
-            padding: 1rem;
-          }
+    #daily {
+      background-image: url("../images/Haferkante-full\ tray.jpg");
+      @include b.daily-about;
+
+      .yellow-bcg {
+        display: inline-flex;
+        justify-content: flex-end;
+        height: 100%;
+
+        p {
+          @include b.daily-about-text;
         }
       }
-  
-      .order-form {
-        width: 100%;
-        max-width: 768px;
+    }
+
+    #offering {
+      margin: auto;
+      .card {
+        display: flex;
+        flex-wrap: wrap;
+        min-width: 345px;
+        max-width: 100%;
+
+        img {
+          width: 50%;
+        }
+
+        div.card-text {
+          display: inline-block;
+          border: solid 2px;
+          width: 50%;
+          padding: 1rem;
+        }
       }
     }
   }
-
-
+}

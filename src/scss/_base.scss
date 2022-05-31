@@ -8,6 +8,7 @@
   // font-family: Arial, Helvetica, sans-serif;
   font-family: "Josefin Sans", sans-serif;
   // font-family: 'VT323', monospace;
+  scroll-behavior: smooth;
 }
 
 //------fonts--------
@@ -20,7 +21,7 @@ $highlight-yellow: yellow;
 
 //sizes
 $tablet-width: 766px;
-$desktop-width:1000px;
+$desktop-width: 1000px;
 //---------mixins--------
 
 //main layout mixins
@@ -45,4 +46,26 @@ $desktop-width:1000px;
   left: 0;
   right: 0;
   height: 5vh;
+}
+
+//about and daily mixins
+@mixin daily-about {
+  background-size: cover;
+  background-position: 50% 70%;
+  background-repeat: no-repeat;
+  display: block;
+  height: 60vh;
+  min-height: 15rem;
+  max-width: 98%;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+@mixin daily-about-text {
+  font-size: 1.8rem;
+  font-weight: 500;
+  background-color: rgba($color: #a1cc7f, $alpha: 0.8);
+  width: 40%;
+  margin: 4rem 6rem 4rem 0rem;
+  padding: 1.2rem;
+  border-radius: 0.2rem;
 }
