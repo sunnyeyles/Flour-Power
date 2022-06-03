@@ -65,30 +65,23 @@ main {
 //tablet size
 @media (min-width: b.$tablet-width) {
   header {
-    height: 55vh;
+    height: 40vh;
   }
   main {
-    //need to fix this
-    // #daily::before {
-    //   content: " ";
-    //   z-index: -1;
-    //   background: url("../images/Backstein-full\ tray.jpg");
-    //   background-size: cover;
-    //   transform: rotate(90deg);
-    //   height: 100vh;
-    // }
     #about {
-      display: none;
+      @include b.daily-about-tablet;
+      background-image: url("../images/Backstein-fulltray-1133x744.jpg");
+      background-size: cover;
+      background-position-y: 50%;
+      p {
+        @include b.daily-about-tablet-text;
+      }
     }
     #daily {
-      display: none;
-      width: 100%;
-      height: 100vh;
-      // background-image: url("../images/Backstein-full\ tray.jpg");
-      // background-rotate property??!!
+      @include b.daily-about-tablet;
+
       p {
-        width: 50%;
-        margin: auto;
+        @include b.daily-about-tablet-text;
       }
     }
 
@@ -122,19 +115,20 @@ main {
   main {
     #about {
       background-image: url("../images/Backstein-full\ tray.jpg");
-      @include b.daily-about;
+      @include b.daily-about-desktop;
 
       .yellow-bcg {
         display: inline-flex;
         justify-content: flex-end;
         p {
-          @include b.daily-about-text;
+          @include b.daily-about-text-desktop;
+          height: 20rem;
         }
       }
     }
     #daily {
       background-image: url("../images/Haferkante-full\ tray.jpg");
-      @include b.daily-about;
+      @include b.daily-about-desktop;
 
       .yellow-bcg {
         display: inline-flex;
@@ -142,7 +136,7 @@ main {
         height: 100%;
 
         p {
-          @include b.daily-about-text;
+          @include b.daily-about-text-desktop;
         }
       }
     }

@@ -10,9 +10,9 @@ nav {
     font-weight: 700;
     box-shadow: 0px 2px 10px #888;
     li {
-      font-size:0.5rem;
+      font-size: 1rem;
       a {
-        text-decoration:none;
+        text-decoration: none;
       }
       a:visited {
         color: unset;
@@ -25,15 +25,76 @@ nav {
   }
 }
 
+//order form
+//mobile size
+
+.order-form {
+  background-color: b.$trans-green;
+  border: solid black 0.1rem;
+  font-size: 1.4rem;
+  padding: 2rem;
+  line-height: 1.5rem;
+  padding-bottom: 5rem;
+  text-align: center;
+  box-shadow: -10px 16px teal;
+  margin-bottom: 20rem;
+  .breads {
+    p {
+      font-weight: 600;
+    }
+    .baked {
+      font-weight: 700;
+      font-size: 1.8rem;
+      background-color: rgb(255, 255, 0);
+      padding-top: 0.4rem;
+    }
+    select {
+      height: 1.6rem;
+      margin-left: -8px;
+      margin-top: -20px;
+      border: none;
+      background-color: transparent;
+    }
+    width: 80%;
+    margin: auto;
+    option {
+      background-color: none;
+    }
+    .tuesday,
+    .friday,
+    .baked {
+      font-weight: 700;
+      font-size: 1.8rem;
+      background-color: rgb(255, 255, 0);
+      padding-top: 0.4rem;
+    }
+  }
+}
+
+// contact
+.contact {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  margin: auto;
+  text-align: left;
+  label {
+    padding: 1rem 0rem 1rem 0rem;
+  }
+  input,
+  textarea {
+    height: 2rem;
+    padding: 1rem;
+    font-style: italic;
+  }
+}
+
 //tablet size & larger & the nav bar is gone
 @media (min-width: b.$tablet-width) {
   nav {
     display: none;
   }
 }
-
-
-
 
 /* toggle language btn  */
 
@@ -42,7 +103,7 @@ nav {
   max-width: 600px;
   height: 500px;
   padding: 50px;
-  color:#555;
+  color: #555;
 }
 
 /* .container .content{
@@ -54,8 +115,7 @@ nav {
   display: block;
 } */
 
-
-.container{
+.container {
   .content {
     display: none;
     margin-top: 20px;
@@ -63,10 +123,7 @@ nav {
   .contentEnglish {
     display: block;
   }
-
 }
-
-
 
 .check {
   position: relative;
@@ -74,9 +131,8 @@ nav {
 }
 
 .check:before {
-
-  content: '';
-  position:absolute;
+  content: "";
+  position: absolute;
   width: 50px;
   height: 25px;
   background: #333;
@@ -85,14 +141,11 @@ nav {
 
 .check:checked:before {
   background: #00a1ff;
-
-  
 }
 
 .check:after {
-
-  content: '';
-  position:absolute;
+  content: "";
+  position: absolute;
   width: 25px;
   height: 25px;
   background: #fff;
@@ -102,27 +155,23 @@ nav {
   box-sizing: border-box;
 }
 
-.check:checked:after{
+.check:checked:after {
   left: 25px;
   border: 2px solid #00a1ff;
-
 }
 
 .check:checked ~ .content.contentEnglish {
-
   display: none;
 }
 
 .check:checked ~ .content.contentDeutsch {
-
   display: block;
 }
 
-.en{
+.en {
   color: #333;
 }
 
-.de{
+.de {
   color: #00a1ff;
 }
-

@@ -18,6 +18,10 @@
 //colours
 $main-green: #16512b;
 $highlight-yellow: yellow;
+$trans-green: rgba(
+  $color: #a1cc7f,
+  $alpha: 0.8,
+);
 
 //sizes
 $tablet-width: 766px;
@@ -48,8 +52,27 @@ $desktop-width: 1000px;
   height: 5vh;
 }
 
-//about and daily mixins
-@mixin daily-about {
+//tablet size about and daily mixins
+@mixin daily-about-tablet {
+  display: flex;
+  height: 100vh;
+  width: 80%;
+  margin: auto;
+  height: 50rem;
+}
+@mixin daily-about-tablet-text {
+  background-color: $trans-green;
+  width: 80%;
+  height: 45%;
+  font-size: 1.5rem;
+  padding: 2rem;
+  border-radius: 0.2rem;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+// desktop size about and daily mixins
+@mixin daily-about-desktop {
   background-size: cover;
   background-position: 50% 70%;
   background-repeat: no-repeat;
@@ -60,10 +83,11 @@ $desktop-width: 1000px;
   margin: auto;
   margin-bottom: 1rem;
 }
-@mixin daily-about-text {
+@mixin daily-about-text-desktop {
   font-size: 1.8rem;
   font-weight: 500;
-  background-color: rgba($color: #a1cc7f, $alpha: 0.8);
+  // background-color: rgba($color: #a1cc7f, $alpha: 0.8);
+  background-color: $trans-green;
   width: 40%;
   margin: 4rem 6rem 4rem 0rem;
   padding: 1.2rem;
